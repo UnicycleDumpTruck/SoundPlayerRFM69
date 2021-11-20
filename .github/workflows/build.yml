@@ -28,3 +28,5 @@ jobs:
           pip install --upgrade platformio
       - name: Run PlatformIO
         run: pio run -e adafruit_feather_m0
+      - name: Check Code
+        run: pio check --skip-packages
