@@ -7,5 +7,9 @@ cd $GITHUB_WORKSPACE
 export PATH=$PATH:~/.platformio/penv/bin
 curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py -o get-platformio.py
 python3 get-platformio.py
+
+# Install relevant platforms:
 pio platform install "atmelsam"
+
+# Compile project:
 pio run
